@@ -11,6 +11,7 @@
     text-decoration: none;
     outline: none;
     font-weight: 400;
+    border: 2px 2px red
 }
 
 html{
@@ -28,3 +29,71 @@ body{
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
 /*Reset and common codes end here*/
+
+/*Header starts here*/
+#blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+.logo-figure{
+    border: 1px solid #fff;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+nav ul{
+display: flex;
+gap: 2rem;
+}
+
+nav ul li{
+    padding: 1rem;
+    transition: all 0.4s;
+}
+
+nav ul li:hover{
+    background-color: brown;
+    border-radius: 0.6rem;
+}
+
+.nav__link{
+    font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+}
+/*Header ends here*/
+
+/*Responsiveness starts here*/
+@media screen and (max-width: 992px) {
+    
+
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+}
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav-ul{
+        flex-direction: column;
+    }
+}
+
+/*Responsiveness ends here*/
