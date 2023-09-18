@@ -28,6 +28,14 @@ body{
     margin: auto;
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-white{
+    color: white;
+}
 /*Reset and common codes end here*/
 
 /*Header starts here*/
@@ -74,6 +82,40 @@ nav ul li:hover{
 }
 /*Header ends here*/
 
+/*Banner section starts here*/
+.banner{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+.banner__heading{
+display: inline-block;
+background-color: black;
+color: white;
+margin-bottom: 1.5rem;
+padding: 1rem;
+}
+.banner__description{
+font-size: 1.8rem;
+.
+}
+.banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner__img{
+    width: 55rem;
+    height: 55rem;
+    border: 0,5rem solid;
+}
+/*Banner section ends here*/
+
 /*Responsiveness starts here*/
 @media screen and (max-width: 992px) {
     
@@ -93,6 +135,7 @@ nav ul li:hover{
     }
     nav-ul{
         flex-direction: column;
+        padding-left: 2.5rem;
     }
 }
 
