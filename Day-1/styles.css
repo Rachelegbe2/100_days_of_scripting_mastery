@@ -97,13 +97,15 @@ nav ul li:hover{
 .banner__heading{
 display: inline-block;
 background-color: black;
+border-radius: 2rem;
+padding: 2rem 1rem;
 color: white;
 margin-bottom: 1.5rem;
+font-size: 4rem;
 padding: 1rem;
 }
 .banner__description{
 font-size: 1.8rem;
-.
 }
 .banner aside{
     flex-basis: 50%;
@@ -118,12 +120,26 @@ font-size: 1.8rem;
 
 /*Responsiveness starts here*/
 @media screen and (max-width: 992px) {
-    
-
+    .banner{
+        flex-direction: column;
+    }
+    .banner article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5rem;
+    }
 }
 @media screen and (max-width: 768px) {
     html{
         font-size: 55.5%;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner article{
+        width: 80%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -136,6 +152,15 @@ font-size: 1.8rem;
     nav-ul{
         flex-direction: column;
         padding-left: 2.5rem;
+    }
+    .banner{
+        min-height: auto;
+    }
+    .banner article{
+     width: 90%;   
+    }
+    .banner__img{
+        max-width: 100%;
     }
 }
 
