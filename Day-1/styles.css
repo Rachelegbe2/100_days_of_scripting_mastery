@@ -204,6 +204,10 @@ width: 80%;
     .banner article{
         width: 80%;
     }
+    .cards{
+        flex-direction: column;
+        width: 80%;
+    }
 }
 @media screen and (max-width: 600px) {
     html{
@@ -224,6 +228,12 @@ width: 80%;
     }
     .banner__img{
         max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+    }
+    .cards{
+        width: 90%;
     }
 }
 
