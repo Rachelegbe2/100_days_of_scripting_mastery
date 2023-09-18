@@ -36,6 +36,31 @@ body{
 .text-white{
     color: white;
 }
+
+.btn{
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.section-heading{
+    font-size: 6rem;
+    text-align: center;
+    font-family: "Italiano", cursive;
+}
+.section-center{
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
 /*Reset and common codes end here*/
 
 /*Header starts here*/
@@ -117,6 +142,44 @@ font-size: 1.8rem;
     border: 0,5rem solid;
 }
 /*Banner section ends here*/
+/*About me section starts here*/
+#blog-about{
+    background-color: #4c4c4c;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card__header{
+    font-size: 3rem;
+    text-align: center;
+}
+.card__description{
+padding: 0.4rem;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+.card__btn{
+width: 80%;
+}
+/*About me section ends here*/
 
 /*Responsiveness starts here*/
 @media screen and (max-width: 992px) {
