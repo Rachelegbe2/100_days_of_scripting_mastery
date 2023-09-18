@@ -235,6 +235,9 @@ gap: 2rem;
         flex-direction: column;
         width: 80%;
     }
+    .archieves{
+        min-width: auto;
+    }
 }
 @media screen and (max-width: 600px) {
     html{
@@ -261,6 +264,12 @@ gap: 2rem;
     }
     .cards{
         width: 90%;
+    }
+    .archieves__lists{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        gap: 3rem;
     }
 }
 
